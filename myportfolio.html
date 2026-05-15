@@ -1,0 +1,291 @@
+ 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Deshmukh - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #e5e7eb;
+            line-height: 1.8; 
+        }
+
+        a {
+            text-decoration: none;
+            color: #60a5fa;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #93c5fd;
+            text-decoration: underline;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            padding: 70px 20px 40px; 
+            text-align: center;
+            border-bottom: 1px solid #374151;
+        }
+
+        .profile-img {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+            margin: 0 auto 20px auto;
+            border: 3px solid #3b82f6;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 32px; 
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #9ca3af;
+            font-size: 16px;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #1f2937;
+            padding: 20px 0; 
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+        }
+
+        nav a {
+            color: #d1d5db;
+            margin: 0 25px; 
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            text-decoration: none;
+            color: #60a5fa;
+        }
+
+        .container {
+            max-width: 900px; 
+            margin: 60px auto; 
+            padding: 0 20px;
+        }
+
+        .section-card {
+            background-color: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 12px;
+            padding: 45px;
+            margin-bottom: 50px; 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+            transition: transform 0.2s ease;
+        }
+        
+        .section-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .section-title {
+            color: #ffffff;
+            font-size: 22px;
+            margin-bottom: 30px; 
+            border-bottom: 2px solid #374151;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .serial-num {
+            color: #60a5fa;
+            font-size: 18px;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .skill-badge {
+            display: inline-block;
+            border: 1px solid #3b82f6;
+            color: #60a5fa;
+            background-color: rgba(59, 130, 246, 0.1);
+            padding: 8px 20px; 
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 500;
+            margin-right: 15px;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            color: #f3f4f6;
+            font-size: 18px; 
+            margin-bottom: 12px;
+        }
+
+        .item-desc {
+            font-size: 16px;
+            color: #9ca3af;
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+        
+        .certificate-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #374151;
+        }
+
+        .certificate-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .cert-details {
+            font-size: 15px;
+            color: #9ca3af;
+            margin-bottom: 8px;
+        }
+
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            font-size: 16px;
+            margin-bottom: 20px; 
+            display: flex;
+            align-items: center;
+            color: #d1d5db;
+        }
+
+        .contact-icon {
+            margin-right: 15px;
+            font-size: 18px;
+            color: #60a5fa;
+            font-weight: bold;
+            min-width: 140px; 
+        }
+
+        footer {
+            background-color: #111827;
+            color: #6b7280;
+            text-align: center;
+            padding: 30px; 
+            font-size: 14px;
+            margin-top: 70px;
+            border-top: 1px solid #bf0000;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="myimage.jpeg" alt="A photo of me" class="profile-img">
+        <h1>Aditya Prashant Deshmukh</h1>
+        <div class="subtitle">Computer Science Engineering Student | 1st Year MIT AOE PUNE | Programmer </div>
+    </header>
+
+    <nav>
+        <a href="#about">01. About</a>
+        <a href="#projects">02. Projects</a>
+        <a href="#certificates">03. Certificates</a>
+        <a href="#skills">04. Skills</a>
+        <a href="#contact">05. Contact</a>
+    </nav>
+
+    <div class="container">
+        
+        <div id="about" class="section-card">
+            <h2 class="section-title"><span class="serial-num">01.</span> About Me</h2>
+            <p class="item-desc">
+                Heyy My self Aditya Prashant Deshmukh I'm From MIT AOE PUNE 1st year Btech Computer Science Student batch :- Cs41 i'm Learning advance python and also more about ai , my hobby is Traveling.
+            </p>
+        </div>
+
+        <div id="projects" class="section-card">
+            <h2 class="section-title"><span class="serial-num">02.</span> Projects</h2>
+            
+            <div class="item-title">Hospital Patient Management System and Software</div>
+            <p class="item-desc">
+                Developed a comprehensive management system to streamline hospital operations, including patient registration, record keeping, and scheduling to improve administrative efficiency.
+            </p>
+            <p class="cert-details"><strong>Technologies Used:</strong> C Programming, Python</p>
+        </div>
+
+        <div id="certificates" class="section-card">
+            <h2 class="section-title"><span class="serial-num">03.</span> Certificates</h2>
+            
+            <div class="certificate-item">
+                <div class="item-title">Learn JavaScript</div>
+                <div class="cert-details"></div>
+                <div class="cert-details"></div>
+                <a href="#" class="cert-details" style="display:inline-block; margin-top:5px;"></a>
+            </div>
+
+            <div class="certificate-item">
+                <div class="item-title">Career Management Essentials</div>
+                <div class="cert-details"></div>
+                <div class="cert-details"></div>
+                <a href="#" class="cert-details" style="display:inline-block; margin-top:5px;"></a><br>
+                <a href="#" class="cert-details" style="display:inline-block;"></a>
+            </div>
+        </div>
+
+        <div id="skills" class="section-card">
+            <h2 class="section-title"><span class="serial-num">04.</span> Skills</h2>
+            <div>
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">C Programming</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">CSS</span>
+            </div>
+        </div>
+
+        <div id="contact" class="section-card">
+            <h2 class="section-title"><span class="serial-num">05.</span> Contact</h2>
+            <ul class="contact-list">
+                <li><span class="contact-icon">Email :</span> <a href="mailto:deshmukhaditya3000@gmail.com">deshmukhaditya3000@gmail.com</a></li>
+                <li><span class="contact-icon">Phone Number :</span> 9923133508</li>
+                <li><span class="contact-icon">Location :</span> MIT AOE Alandi, Pune</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; Aditya Deshmukh's  Portfolio
+    </footer>
+
+</body> 
+</html>
+```
